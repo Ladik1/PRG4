@@ -83,7 +83,7 @@
 <div class="scroll-to-top" onclick="scrollToTop()">Návrat nahoru</div>
 
 <script>
-    // Zobrazit nebo skrýt tlačítko "Scroll to Top"
+   
     window.onscroll = function() {
         let scrollToTopButton = document.querySelector('.scroll-to-top');
         if (document.documentElement.scrollTop > 200) {
@@ -93,12 +93,12 @@
         }
     };
 
-    // Funkce pro návrat nahoru
+    
     function scrollToTop() {
         window.scrollTo({top: 0, behavior: 'smooth'});
     }
 
-    // Validace formuláře
+    
     document.getElementById('contactForm').addEventListener('submit', function(event) {
         let name = document.getElementById('name').value;
         let email = document.getElementById('email').value;
